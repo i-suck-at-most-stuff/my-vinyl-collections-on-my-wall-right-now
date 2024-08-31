@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.wall {
+    background-image: url('https://cdn.glitch.global/e63497bf-9997-46ab-a8eb-b5d4b1610d26/IMG_8926.jpg?v=1725063350674');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  
+  z-index: 1;
+}
+
+.shelf-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; /* Space between rows */
+}
+
+.album {
+    position: relative;
+    margin: 0 20px; /* Space between albums */
+    width: 200px; /* Adjust width to your image size */
+    height: 200px; /* Adjust height to your image size */
+    z-index: 2;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border: 2px solid #333; /* Optional border around albums */
+}
+
+.shelf {
+    position: absolute;
+    bottom: -6px; 
+    left: 0;
+    width: 100%; /* Ensures shelf image is on top */
+    z-index: -1;
+}
+.shelf-two {
+    position: absolute;
+    bottom: -6px; 
+    left: 0;
+    width: 100%; /* Ensures shelf image is on top */
+    z-index: 3;
+}
